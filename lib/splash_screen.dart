@@ -54,6 +54,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 ),
               ),
               builder: (BuildContext context, Widget? child) {
+                print(_controller.value);
                 return Transform.rotate(
                   angle: _controller.value * 2.0 * math.pi,
                   child: child,
